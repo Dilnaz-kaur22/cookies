@@ -16,6 +16,92 @@
     <script src='./assets/script/index.js' defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <p> Cookies in JavaScript is a set of data stored in the browser that is
+                 fetched whenever a web page is loaded, and the content of this cookie will
+                 be used to reload the web page whenever there is a connectivity issue or the
+                 server is not reachable.</p>
+                <div class="hide three">
+                      <h3>Cookies</h3>
+                      <p class="two">We use cookies to improve your experience
+                        on our website. By clicking 'Accept'. you agree to the
+                        use of cookies for marketing and analytics purpose.</p>
+                     <div class="button">
+                        <button class="accept">Accept</button>
+                        <button class="settings">Settings</button>
+                    </div>
+                </div>
+                <div class="hide onload">
+                    <h3 class="heading">Settings</h3>
+                    <div class="flex">
+                        <div class="name">
+                            <h4>Browser</h4>
+                        </div>
+                        <div class="toggle">
+                            <label class="switch">
+                                <input  class="browser" type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                        <h4>Operating systems</h4></div>
+                        <div class="toggle">
+                          <label class="switch">
+                            <input class = "operating" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                        <h4>Width</h4>
+                        </div>
+                        <div class="toggle">
+                        <label class="switch">
+                            <input class="width" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                        <h4>Height</h4>
+                        </div>
+                        <div class="toggle">
+                        <label class="switch">
+                            <input class="height" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button class="show">Save Preferrence</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+<p class="answer"></p>
+    </main>
+
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+  
+   
+  
+        window.addEventListener('resize', () => {
+          vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+   </script>
 </body>
 </html>
